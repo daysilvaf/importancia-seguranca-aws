@@ -7,7 +7,8 @@ acesso apenas ao que é necessário para executar suas tarefas específicas.
 Para a farmácia fictícia, a implementação do IAM seria:
 • Criação de grupos no IAM, como "administradores", "funcionários" e "usuários finais";
 • Associar políticas de permissões adequadas a cada grupo com base nas funções e responsabilidades dos usuários;
-• Definir políticas de permissões de acordo com o princípio do "privilégio mínimo", ou seja, conceder apenas as permissões necessárias para cada usuário realizar suas atividades;
+• Definir políticas de permissões de acordo com o princípio do "privilégio mínimo", ou seja, conceder apenas as permissões necessárias para cada usuário realizar suas 
+atividades;
 Dessa forma, a farmácia pode garantir que os dados e recursos sensíveis sejam associados somente pelas pessoas autorizadas, reduzindo significativamente os riscos de acessos 
 não autorizados. 
 
