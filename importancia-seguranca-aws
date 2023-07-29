@@ -1,0 +1,32 @@
+Para aumentar a segurança do sistema de uma farmácia fictícia na AWS, existem várias ferramentas e serviços disponíveis. Abaixo serão descritas 3 ferramentas importantes e 
+suas implementações recomendadas: 
+
+AWS IDENTIFY AND ACCESS MANAGEMENT (IAM)
+O IAM é um serviço central para controlar o acesso dos recursos da AWS. Ele permite que o usuário defina permissões precisas para cada usuário, grupo ou função, restringindo o 
+acesso apenas ao que é necessário para executar suas tarefas específicas. 
+Para a farmácia fictícia, a implementação do IAM seria:
+• Criação de grupos no IAM, como "administradores", "funcionários" e "usuários finais";
+• Associar políticas de permissões adequadas a cada grupo com base nas funções e responsabilidades dos usuários;
+• Definir políticas de permissões de acordo com o princípio do "privilégio mínimo", ou seja, conceder apenas as permissões necessárias para cada usuário realizar suas atividades;
+Dessa forma, a farmácia pode garantir que os dados e recursos sensíveis sejam associados somente pelas pessoas autorizadas, reduzindo significativamente os riscos de acessos 
+não autorizados. 
+
+AWS WEB APPLICATION FIREWALL (WAF)
+O WAF é um serviço que protege as aplicações web do usuário contra ataques maliciosos, como injeção de SQL, ataques de força bruta e cross-site scripting (XSS). Para a 
+farmácia fictícia, a implementação do WAF seria:
+• Configurar o WAF para monitorar e filtrar o tráfego de entrada para o aplicativo web da farmácia;
+• Criar regras personalizadas para bloquear solicitações suspeitas com base em padrões conhecidos de ataques
+• Monitorar os logs de tráfego do WAF regularmente para identificar possíveis tentativas de exploração e ajustar as regras conforme necessário.
+Ao usar o WAF, a farmácia pode reduzir a superfície de ataque do seu aplicativo web, protegendo-o contra ataques cibernéticos conhecidos.
+
+AWS KEY MANAGEMENT SERVICE (KMS)
+O KMS é um serviço que permite criar, gerenciar e controlar chaves de criptografia usadas para proteger dados confidenciais na AWS. Para a farmácia fictícia, a implementação do 
+KMS seria:
+• Usar o KMS para criar e gerenciar chaves mestras de criptografia para proteger dados sensíveis, como informações de pagamento dos clientes e dados médicos;
+• Configurar o KMS para criptografar dados em repouso em bancos de dados, armazenamentos S3 e outros serviços da AWS que contenham informações confidenciais;
+• Usar o KMS para gerenciar a rotação periódica das chaves de criptografia para melhorar a segurança.
+Com a utilização do KMS, a farmácia pode garantir a proteção dos dados confidenciais armazenados na AWS, mesmo que ocorra um acesso não autorizado aos recursos.
+
+Essas três ferramentas da AWS, IAM, WAF e KMS, fornecem uma camada adicional de segurança para a farmácia fictícia, protegendo seus dados e recursos da nuvem contra ameaças 
+cibernéticas e fornecendo maior controle sobre o acesso autorizado aos sistemas e informações sensíveis. É importante lembrar que a segurança da plataforma na AWS é uma 
+abordagem em camadas, portanto, a combinação de várias ferramentas e práticas de segurança é essencial para garantir uma proteção abrangente.
