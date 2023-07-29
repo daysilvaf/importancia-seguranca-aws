@@ -1,1 +1,1 @@
-# importancia-seguranca-aws
+Atividade de desafio de projeto da Formação AWS Cloud Practitioner Certification da DIO onde foi recomendado 3 ferramentas do conjunto dos serviços da AWS para uma farmácia fictícia visando aumentar a segurança do sistema dessa empresa. 
